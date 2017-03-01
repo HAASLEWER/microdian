@@ -32,50 +32,46 @@ body > main > div > ul.slides > li > div > h3 {
   color: #d65050;  
 }
 
-.networking {
-  background-image: url("/img/dark_bg_up_left.jpg");
+.container {
+  height: 100%;
+}
+
+.section {
+  background-image: url("/img/bg.png");
   background-repeat: no-repeat;
-  background-size: 30% 100%;
-  background-position: left top;
-  background-color: #1f1f1f;  
+  background-size: 100% 100%;
+  background-position: left bottom;
+  background-color: #1f1f1f;   
+}
+
+@media only screen and (max-device-width: 480px) {
+  .section {
+    background-image: none;
+    background-color: #1f1f1f;  
+  }  
+}
+
+.networking {
+ 
 }
 
 .hw_sw {
-  background-image: url("/img/dark_bg_up_right.jpg");
-  background-repeat: no-repeat;
-  background-size: 30% 100%;
-  background-position: right top;
-  background-color: #1f1f1f;  
+  
 }
 
 .support {
-  background-image: url("/img/dark_bg_up_left.jpg");
-  background-repeat: no-repeat;
-  background-size: 30% 100%;
-  background-position: left top;
-  background-color: #1f1f1f;  
+ 
 }
 
 .cctv {
-  background-image: url("/img/dark_bg_up_right.jpg");
-  background-repeat: no-repeat;
-  background-size: 30% 100%;
-  background-position: right top;
-  background-color: #1f1f1f;  
+ 
 }
 
 .contact {
-  background-image: url("/img/dark_bg_up_left.jpg");
-  background-repeat: no-repeat;
-  background-size: 30% 100%;
-  background-position: left top;
-  background-color: #1f1f1f;  
+
 }
 
 .title {
-  font-size: 57px;
-  line-height: 67px;
-  font-weight: 700;  
   color: white;
 }
 
@@ -89,7 +85,7 @@ body > main > div > ul.slides > li > div > h3 {
   width: 100%;
   height: 5px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .section-text {
@@ -97,4 +93,35 @@ body > main > div > ul.slides > li > div > h3 {
   font-size: 20px;
   text-align: justify;
   margin-top: 15px;
+}
+
+.card .card-title {
+  font-size: 18px;
+}
+
+.card-image {
+   height: 176px; 
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.contact_text {
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact_text h4 {
+  margin-left: 15px;
+}
+
+.fa-li {
+  left: -1.5em !important;
+  top: 0 !important;  
+}
+
+#contact > div > div.row > div.col.s12.m6.l6.contact_text > ul > li {
+  font-size: inherit !important;  
 }
